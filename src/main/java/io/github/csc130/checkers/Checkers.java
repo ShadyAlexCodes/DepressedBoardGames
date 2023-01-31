@@ -7,4 +7,8 @@
 package io.github.csc130.checkers;
 
 public class Checkers {
+
+    public void startGame() {
+
+    }
 }
