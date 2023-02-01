@@ -5,4 +5,24 @@ public class CheckersHuman extends CheckersPlayer{
     public void takeTurn(){
 
     }
+
+    @Override
+    public int getPiecesLeft() {
+        return 0;
+    }
+
+    @Override
+    public void setPiecesLeft(int piecesLeft) {
+
+    }
+
+    @Override
+    public void takePiece(int x, int y) {
+
+    }
+
+    @Override
+    public void kingPiece(int x, int y) {
+
+    }
 }

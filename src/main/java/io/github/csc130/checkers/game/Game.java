@@ -7,4 +7,6 @@
 package io.github.csc130.checkers.game;
 
 public class Game {
+
+
 }

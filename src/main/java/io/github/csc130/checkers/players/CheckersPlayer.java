@@ -8,14 +8,14 @@ package io.github.csc130.checkers.players;
 
 import io.github.csc130.players.Player;
 
-public class CheckersPlayer extends Player {
-    private int picesLeft;
+public abstract class CheckersPlayer extends Player {
+    private int piecesLeft;
 
-    public int getPicesLeft() {
-        return picesLeft;
-    }
+    public abstract int getPiecesLeft();
 
-    public void setPicesLeft(int picesLeft) {
-        this.picesLeft = picesLeft;
-    }
+    public abstract void setPiecesLeft(int piecesLeft);
+
+    public abstract void takePiece(int x, int y);
+
+    public abstract void kingPiece(int x, int y);
 }

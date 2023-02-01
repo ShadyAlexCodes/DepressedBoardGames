@@ -5,94 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e923e9bb-6f66-4855-94b7-cfbbc9fd4b76" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/CheckerPiece.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/Piece.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersAI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersHuman.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/Checkers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/Checkers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/game/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/game/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/game/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/players/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/PlayerAI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/PlayerHuman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/players/PlayerHuman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersAI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersHuman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersHuman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/utils/Utils.java" afterDir="false" />
     </list>
+    <list id="114bb6c4-8f81-4531-839f-a88357e91892" name="Changes by Emile Randolph" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/Checkers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/Checkers.java" afterDir="false" />
+    </list>
+    <list id="9992e68e-5b35-44f6-a446-70aab8d4243a" name="Changes by Mathew Sjoquist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Enum" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/Checkers.java">
+      <ranges>
+        <range start1="28" end1="28" start2="28" end2="29" changelist="114bb6c4-8f81-4531-839f-a88357e91892" />
+        <range start1="29" end1="30" start2="30" end2="38" changelist="e923e9bb-6f66-4855-94b7-cfbbc9fd4b76" />
+        <range start1="33" end1="36" start2="41" end2="41" changelist="e923e9bb-6f66-4855-94b7-cfbbc9fd4b76" />
+      </ranges>
+    </file>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="2L6gknOssFPeaMllljYKNcCVM8F" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+}]]></component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="e923e9bb-6f66-4855-94b7-cfbbc9fd4b76" name="Changes" comment="" />
-      <created>1675197093937</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1675197093937</updated>
-      <workItem from="1675197095147" duration="548000" />
-    </task>
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

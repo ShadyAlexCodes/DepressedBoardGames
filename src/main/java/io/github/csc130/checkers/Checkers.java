@@ -27,12 +27,17 @@ public class Checkers {
         return false;
     }
 
-    public void takePiece(int x, int y){
+
+    public void resetBoard() {
+        for (int i = 0; i < board.getRowSize(); i++) {
+            for (int j = 0; j < board.getColumnSize(); j++) {
+                board.getBoard()[i][j] = CheckerPiece.BLANK_SPACE;
+            }
+        }
+
+
 
     }
 
-    public void kingPiece(int x, int y){
-
-    }
 
 }
