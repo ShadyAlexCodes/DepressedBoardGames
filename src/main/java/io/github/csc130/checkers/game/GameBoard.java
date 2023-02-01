@@ -6,5 +6,20 @@
  */
 package io.github.csc130.checkers.game;
 
+import io.github.csc130.checkers.Piece;
+
 public class GameBoard {
+    private Piece[][] board;
+
+    public GameBoard(int height, int length) {
+        board = new Piece[height][length];
+    }
+
+    public Piece[][] getBoard() {
+        return board;
+    }
+
+    public void resetBoard(){
+
+    }
 }

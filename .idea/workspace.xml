@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e923e9bb-6f66-4855-94b7-cfbbc9fd4b76" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/CheckerPiece.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/Piece.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersAI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersHuman.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/Checkers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/Checkers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/game/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/game/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/players/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/PlayerAI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/PlayerHuman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/players/PlayerHuman.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -34,7 +45,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2L6gknOssFPeaMllljYKNcCVM8F" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,7 +58,6 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -53,7 +65,7 @@
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -62,12 +74,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675197093937</updated>
-      <workItem from="1675197095147" duration="1245000" />
-      <workItem from="1675283988280" duration="341000" />
+      <workItem from="1675197095147" duration="548000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
