@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e923e9bb-6f66-4855-94b7-cfbbc9fd4b76" name="Changes" comment="" />
-    <list id="68d5d489-22b7-4eb8-82a6-d713cb383976" name="Changes by Cynthia" comment="" />
+    <list default="true" id="e923e9bb-6f66-4855-94b7-cfbbc9fd4b76" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/GUI/Menus/CasinoMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <list id="68d5d489-22b7-4eb8-82a6-d713cb383976" name="Changes by Cynthia" comment="">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675197093937</updated>
       <workItem from="1675197095147" duration="548000" />
-      <workItem from="1675198165250" duration="1872000" />
+      <workItem from="1675198165250" duration="1563000" />
     </task>
     <servers />
   </component>
