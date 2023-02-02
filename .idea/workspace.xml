@@ -4,50 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e923e9bb-6f66-4855-94b7-cfbbc9fd4b76" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/Checkers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/Checkers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/game/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/game/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersAI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersHuman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersHuman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/utils/Utils.java" afterDir="false" />
+    <list default="true" id="e923e9bb-6f66-4855-94b7-cfbbc9fd4b76" name="Changes" comment="Hi cynthiaaaaaaa">
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/GUI/Controllers/CasinoMainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/GUI/Controllers/CasinoMainController.java" afterDir="false" />
     </list>
-    <list id="114bb6c4-8f81-4531-839f-a88357e91892" name="Changes by Emile Randolph" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/Checkers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/Checkers.java" afterDir="false" />
-    </list>
-    <list id="9992e68e-5b35-44f6-a446-70aab8d4243a" name="Changes by Mathew Sjoquist" comment="" />
+    <list id="68d5d489-22b7-4eb8-82a6-d713cb383976" name="Changes by Cynthia" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/Checkers.java">
-      <ranges>
-        <range start1="28" end1="28" start2="28" end2="29" changelist="114bb6c4-8f81-4531-839f-a88357e91892" />
-        <range start1="29" end1="30" start2="30" end2="38" changelist="e923e9bb-6f66-4855-94b7-cfbbc9fd4b76" />
-        <range start1="33" end1="36" start2="41" end2="41" changelist="e923e9bb-6f66-4855-94b7-cfbbc9fd4b76" />
-      </ranges>
-    </file>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "node.js.selected.package.tslint": "(autodetect)"
-  }
-}]]></component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Hi cynthiaaaaaaa">
+      <created>1675285578694</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675285578694</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Hi cynthiaaaaaaa" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hi cynthiaaaaaaa" />
   </component>
 </project>
