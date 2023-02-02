@@ -80,7 +80,6 @@ public class Game {
     }
 
     public static int displayMainMenu() {
-
         int selection = -1;
         do {
             Utils.writeLn("Select a option to play", Utils.TextColor.GREEN);
@@ -97,8 +96,6 @@ public class Game {
                 Utils.writeLn("Invalid Option! Choose an option between 1 and 31");
             }
         } while (selection == -1);
-
         return selection;
-
     }
 }

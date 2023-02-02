@@ -50,6 +50,7 @@ public class CheckersHuman extends CheckersPlayer{
             return false;
         }
 
+        
         // Check if the move is a diagonal move of the correct distance
         if (Math.abs(fromRow - toRow) != 1 || Math.abs(fromCol - toCol) != 1) {
             return false;
