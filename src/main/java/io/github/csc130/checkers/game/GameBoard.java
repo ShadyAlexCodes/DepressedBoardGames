@@ -33,31 +33,29 @@ public class GameBoard {
             for (int j = 0; j < 8; j++) {
                 if ((i + j) % 2 == 0) {
                     if (i < 3) {
-                        board[i][j] = CheckerPiece.BLACK_CHECKER;
-                    } else if (i > 4) {
                         board[i][j] = CheckerPiece.RED_CHECKER;
+                    } else if (i > 4) {
+                        board[i][j] = CheckerPiece.BLACK_CHECKER;
                     } else {
                         board[i][j] = CheckerPiece.BLANK_SPACE;
                     }
                 } else {
-                    board[i][j] = CheckerPiece.BLANK_SPACE;
+                    board[i][j] =CheckerPiece.BLANK_SPACE;
                 }
             }
         }
     }
 
-    public void printBoard() {
+ /*   public void printBoard() {
         System.out.println("  A B C D E F G H");
         for (int i = 0; i < 8; i++) {
             System.out.print((i + 1) + " ");
             for (int j = 0; j < 8; j++) {
-                if(board[i][j].equals(CheckerPiece.BLACK_CHECKER)) Utils.writeLn(board[i][j] + " ", Utils.TextColor.WHITE, Utils.BackgroundColor.BLACK);
-                if(board[i][j].equals(CheckerPiece.RED_CHECKER)) Utils.writeLn(board[i][j] + " ", Utils.TextColor.WHITE, Utils.BackgroundColor.RED);
-             //   System.out.print(board[i][j] + " ");
+                System.out.print(board[i][j] + " ");
             }
             System.out.println();
         }
-    }
+    }*/
 
 
     public int getRowSize() {
@@ -68,13 +66,13 @@ public class GameBoard {
         return columnSize;
     }
 
-//    public void displayBoard() {
-//        for (int row = 0; row < rowSize; row++) {
-//            for(int col = 0; col < columnSize; col++) {
-//                if(board[row][col].equals(CheckerPiece.BLANK_SPACE)) Utils.write(" | ");
-//                if(col < columnSize - 1) Utils.write(" | ", Utils.TextColor.WHITE);
-//            }
-//            if(row < rowSize - 1) Utils.writeLn("---|---|---|---|", Utils.TextColor.YELLOW);
-//        }
-//    }
+    public void displayBoard() {
+        for (int row = 0; row < rowSize; row++) {
+            for(int col = 0; col < columnSize; col++) {
+                if(board[row][col].equals(CheckerPiece.BLANK_SPACE)) Utils.write(" | ");
+                if(col < columnSize - 1) Utils.write(" | ", Utils.TextColor.WHITE);
+            }
+            if(row < rowSize - 1) Utils.writeLn("---|---|---|---|", Utils.TextColor.YELLOW);
+        }
+    }
 }
