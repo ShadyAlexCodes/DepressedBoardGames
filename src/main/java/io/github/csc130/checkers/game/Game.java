@@ -6,6 +6,7 @@
  */
 package io.github.csc130.checkers.game;
 
+import io.github.csc130.checkers.CheckerPiece;
 import io.github.csc130.checkers.players.CheckersAI;
 import io.github.csc130.checkers.players.CheckersHuman;
 import io.github.csc130.checkers.players.CheckersPlayer;
@@ -63,9 +64,9 @@ public class Game {
         do {
             CheckersPlayer player = players.get(turn);
 
-            gameBoard.printBoard();
+            gameBoard.displayBoard();
 
-            player.takeTurn(gameBoard, 'x');
+            player.takeTurn(gameBoard, CheckerPiece.RED_CHECKER);
 
 //            if(gameBoard.checkWin()) {
 //                playingGame = false;
