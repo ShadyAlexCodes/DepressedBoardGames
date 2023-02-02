@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e923e9bb-6f66-4855-94b7-cfbbc9fd4b76" name="Changes" comment="Hi cynthiaaaaaaa">
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/GUI/Controllers/CasinoMainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/GUI/Controllers/CasinoMainController.java" afterDir="false" />
+    <list default="true" id="e923e9bb-6f66-4855-94b7-cfbbc9fd4b76" name="Changes" comment="fixed a simicolon issue, yw">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="68d5d489-22b7-4eb8-82a6-d713cb383976" name="Changes by Cynthia" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,9 +26,22 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectId" id="2LCK3ezcTKl4dczBNwIVoJWl5ZU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="Hi cynthiaaaaaaa">
       <created>1675285578694</created>
@@ -37,8 +50,26 @@
       <option name="project" value="LOCAL" />
       <updated>1675285578694</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e923e9bb-6f66-4855-94b7-cfbbc9fd4b76" name="Changes" comment="Hi cynthiaaaaaaa" />
+      <created>1675369430568</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675369430568</updated>
+      <workItem from="1675369432676" duration="926000" />
+    </task>
+    <task id="LOCAL-00002" summary="fixed a simicolon issue, yw">
+      <created>1675369662237</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675369662237</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -53,6 +84,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Hi cynthiaaaaaaa" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hi cynthiaaaaaaa" />
+    <MESSAGE value="fixed a simicolon issue, yw" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed a simicolon issue, yw" />
   </component>
 </project>
