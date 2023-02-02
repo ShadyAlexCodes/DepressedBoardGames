@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e923e9bb-6f66-4855-94b7-cfbbc9fd4b76" name="Changes" comment="Hi cynthiaaaaaaa">
+    <list default="true" id="e923e9bb-6f66-4855-94b7-cfbbc9fd4b76" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/Checkers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/Checkers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/game/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/game/GameBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersAI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersHuman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersHuman.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/players/Player.java" afterDir="false" />
     </list>
     <list id="68d5d489-22b7-4eb8-82a6-d713cb383976" name="Changes by Cynthia" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +43,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -87,7 +84,21 @@
       <updated>1675357787746</updated>
       <workItem from="1675357789286" duration="5047000" />
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="a">
+      <created>1675372168467</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675372168467</updated>
+    </task>
+    <task id="LOCAL-00003" summary="updated board">
+      <created>1675372407440</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675372407440</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +117,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Hi cynthiaaaaaaa" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hi cynthiaaaaaaa" />
+    <MESSAGE value="a" />
+    <MESSAGE value="updated board" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated board" />
   </component>
 </project>

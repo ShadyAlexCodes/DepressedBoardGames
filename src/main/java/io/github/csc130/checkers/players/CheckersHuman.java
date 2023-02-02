@@ -1,5 +1,7 @@
 package io.github.csc130.checkers.players;
 
+import io.github.csc130.checkers.CheckerPiece;
+import io.github.csc130.checkers.Piece;
 import io.github.csc130.checkers.game.GameBoard;
 import io.github.csc130.utils.Utils;
 
@@ -15,7 +17,7 @@ public class CheckersHuman extends CheckersPlayer{
     }
 
     @Override
-    public void takeTurn(GameBoard board, char playerChar) {
+    public void takeTurn(GameBoard board, CheckerPiece playerChar) {
         String firstMove = Utils.getStringInput("Player " + playerChar + ", enter first character to move (e.g. a2 a3): ", false);
         String secondMove = Utils.getStringInput("Player " + playerChar + ", enter the location for your character to move (e.g. a2 a3): ", false);
 
@@ -25,16 +27,16 @@ public class CheckersHuman extends CheckersPlayer{
         int toRow = 8 - (secondMove.charAt(1) - '0');
         int toCol = secondMove.charAt(0) - 'a';
 
-        if (isValidMove(board.getBoard(), fromRow, fromCol, toRow, toCol, 'x')) {
+        if (isValidMove(board.getBoard(), fromRow, fromCol, toRow, toCol, CheckerPiece.RED_CHECKER)) {
             board.getBoard()[toRow][toCol] = board.getBoard()[fromRow][fromCol];
-            board.getBoard()[fromRow][fromCol] = ' ';
+            board.getBoard()[fromRow][fromCol] = CheckerPiece.BLANK_SPACE;
         } else {
             System.out.println("Invalid move, try again");
             takeTurn(board, playerChar);
         }
     }
 
-    private static boolean isValidMove(char[][] board, int fromRow, int fromCol, int toRow, int toCol, char player) {
+    private static boolean isValidMove(Piece[][] board, int fromRow, int fromCol, int toRow, int toCol, CheckerPiece player) {
         // Check if from and to positions are on the board
         if (fromRow < 0 || fromRow > 7 || fromCol < 0 || fromCol > 7 || toRow < 0 || toRow > 7 || toCol < 0 || toCol > 7) {
             return false;
@@ -46,7 +48,7 @@ public class CheckersHuman extends CheckersPlayer{
         }
 
         // Check if the to position is empty
-        if (board[toRow][toCol] != ' ') {
+        if (board[toRow][toCol] != CheckerPiece.BLACK_CHECKER) {
             return false;
         }
 

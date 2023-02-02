@@ -6,6 +6,7 @@
  */
 package io.github.csc130.checkers.players;
 
+import io.github.csc130.checkers.CheckerPiece;
 import io.github.csc130.checkers.game.Game;
 import io.github.csc130.checkers.game.GameBoard;
 import io.github.csc130.players.Player;
@@ -26,7 +27,7 @@ public abstract class CheckersPlayer {
 
     public abstract void takeTurn();
 
-    public abstract void takeTurn(GameBoard gameBoard, char playerChar);
+    public abstract void takeTurn(GameBoard gameBoard, CheckerPiece playerChar);
 
 
     public abstract int getPiecesLeft();
