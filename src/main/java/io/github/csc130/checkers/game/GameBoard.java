@@ -11,7 +11,7 @@ import io.github.csc130.checkers.Piece;
 import io.github.csc130.utils.Utils;
 
 public class GameBoard {
-    private final char[][] board;
+    private final Piece[][] board;
     private final int rowSize;
     private final int columnSize;
 
@@ -19,12 +19,12 @@ public class GameBoard {
         this.rowSize = row;
         this.columnSize = column;
 
-        board = new char[rowSize][columnSize];
+        board = new Piece[rowSize][columnSize];
 
 
     }
 
-    public char[][] getBoard() {
+    public Piece[][] getBoard() {
         return board;
     }
 
@@ -33,14 +33,14 @@ public class GameBoard {
             for (int j = 0; j < 8; j++) {
                 if ((i + j) % 2 == 0) {
                     if (i < 3) {
-                        board[i][j] = 'X';
+                        board[i][j] = CheckerPiece.BLACK_CHECKER;
                     } else if (i > 4) {
-                        board[i][j] = 'O';
+                        board[i][j] = CheckerPiece.RED_CHECKER;
                     } else {
-                        board[i][j] = ' ';
+                        board[i][j] = CheckerPiece.BLANK_SPACE;
                     }
                 } else {
-                    board[i][j] = ' ';
+                    board[i][j] = CheckerPiece.BLANK_SPACE;
                 }
             }
         }
@@ -51,7 +51,9 @@ public class GameBoard {
         for (int i = 0; i < 8; i++) {
             System.out.print((i + 1) + " ");
             for (int j = 0; j < 8; j++) {
-                System.out.print(board[i][j] + " ");
+                if(board[i][j].equals(CheckerPiece.BLACK_CHECKER)) Utils.writeLn(board[i][j] + " ", Utils.TextColor.WHITE, Utils.BackgroundColor.BLACK);
+                if(board[i][j].equals(CheckerPiece.RED_CHECKER)) Utils.writeLn(board[i][j] + " ", Utils.TextColor.WHITE, Utils.BackgroundColor.RED);
+             //   System.out.print(board[i][j] + " ");
             }
             System.out.println();
         }

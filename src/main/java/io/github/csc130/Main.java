@@ -5,7 +5,7 @@ import io.github.csc130.utils.Utils;
 
 public class Main {
     public static void main(String[] args) {
-        new Checkers();
+        new Checkers().startGame();
     }
 
     public static int displayMainMenu() {
