@@ -6,10 +6,12 @@
  */
 package io.github.csc130.players;
 
+import io.github.csc130.checkers.game.GameBoard;
+
 public abstract class Player {
     private String name;
 
-    public void takeTurn(){
+    public void takeTurn(GameBoard gameBoard){
 
     }
     public String getName() {

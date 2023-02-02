@@ -6,10 +6,28 @@
  */
 package io.github.csc130.checkers.players;
 
+import io.github.csc130.checkers.game.Game;
+import io.github.csc130.checkers.game.GameBoard;
 import io.github.csc130.players.Player;
 
-public abstract class CheckersPlayer extends Player {
+public abstract class CheckersPlayer {
+
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     private int piecesLeft;
+
+    public abstract void takeTurn();
+
+    public abstract void takeTurn(GameBoard gameBoard, char playerChar);
+
 
     public abstract int getPiecesLeft();
 
