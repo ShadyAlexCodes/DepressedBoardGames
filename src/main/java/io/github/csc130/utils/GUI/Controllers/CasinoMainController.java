@@ -27,7 +27,8 @@ public class CasinoMainController implements Initializable {
                 try{
                     //I'm not sure how to make it pass on the selected fxml file when the button changes
                     /* what I've thought of until now is to make a string that will apply what the user selected
-                    * from the combobox and then make that the value of the string to pass onto this method*/
+                    * from the combobox and then make that the value of the string to pass onto this method
+                    * radio buttons are also an option*/
 
                     changeScene.sceneChange(actionEvent,"na");
                 } catch (IOException e){
