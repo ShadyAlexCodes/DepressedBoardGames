@@ -32,6 +32,7 @@ public class CheckerMe implements Initializable {
         gameModeDrop.getItems().add("Player vs CPU");
         gameModeDrop.getItems().add("CPU vs CPU");
 
+        //just for you cynthia
 
 
     }
