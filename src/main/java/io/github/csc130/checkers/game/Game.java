@@ -30,23 +30,24 @@ public class Game {
 
 
     public void startGame() {
+
         boolean playingGame = false;
         do {
             int selection = displayMainMenu();
             switch(selection) {
                 case 1 -> {
-                    players.add(new CheckersHuman(Utils.getStringInput("Enter the first players name: ", true)));
-                    players.add(new CheckersHuman(Utils.getStringInput("Enter the second players name: ", true)));
+                    players.add(new CheckersHuman(Utils.getStringInput("Enter the first players name: ", false), Utils.getCharInput("Enter the first players character: ")));
+                    players.add(new CheckersHuman(Utils.getStringInput("Enter the second players name: ", false), Utils.getCharInput("Enter the second players character: ")));
                     playingGame = true;
                 }
                 case 2 -> {
-                    players.add(new CheckersHuman(Utils.getStringInput("Enter the players name: ", true)));
-                    players.add(new CheckersAI(Utils.getStringInput("Enter the computers name: ", true)));
+                    players.add(new CheckersHuman(Utils.getStringInput("Enter the first players name: ", false), Utils.getCharInput("Enter the first players character: ")));
+                    players.add(new CheckersAI(Utils.getStringInput("Enter the computers name: ", false), Utils.getCharInput("Enter the computers character: ")));
                     playingGame = true;
                 }
                 case 3 -> {
-                    players.add(new CheckersAI(Utils.getStringInput("Enter the first computers name: ", true)));
-                    players.add(new CheckersAI(Utils.getStringInput("Enter the second computers name: ", true)));
+                    players.add(new CheckersAI(Utils.getStringInput("Enter the first computers name: ", false), Utils.getCharInput("Enter the first computers character: ")));
+                    players.add(new CheckersAI(Utils.getStringInput("Enter the second computers name: ", false), Utils.getCharInput("Enter the second computers character: ")));
                     playingGame = true;
                 }
                 default -> {
@@ -57,16 +58,23 @@ public class Game {
         } while (!playingGame);
 
         turn = 0;
-        gameBoard.initializeBoard();
+        gameBoard.initializeBoard(players.get(0), players.get(1));
 
         Player winner = null, loser = null;
 
         do {
             CheckersPlayer player = players.get(turn);
 
-            gameBoard.displayBoard();
+            gameBoard.printBoard();
 
-            player.takeTurn(gameBoard, CheckerPiece.RED_CHECKER);
+            player.takeTurn(gameBoard);
+
+            // Check for game end
+            if (gameEnd(player)) {
+                System.out.println(player.getName() + " wins!");
+
+                playingGame = false;
+            }
 
 //            if(gameBoard.checkWin()) {
 //                playingGame = false;
@@ -78,6 +86,18 @@ public class Game {
             if(++turn == players.size()) turn = 0;
         } while(playingGame);
 
+    }
+
+    private boolean gameEnd(CheckersPlayer currentPlayer) {
+        // Check if current player has no more pieces on the board
+        for (int i = 0; i < gameBoard.getRowSize(); i++) {
+            for (int j = 0; j < gameBoard.getColumnSize(); j++) {
+                if (gameBoard.getBoard()[i][j] == currentPlayer.getCharacter()) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
     public static int displayMainMenu() {

@@ -6,66 +6,53 @@ import io.github.csc130.checkers.game.GameBoard;
 import io.github.csc130.utils.Utils;
 
 public class CheckersHuman extends CheckersPlayer{
-    public CheckersHuman(String name) {
-        super();
-    }
 
 
-    @Override
-    public void takeTurn() {
-
+    public CheckersHuman(String name, char character) {
+        super(name, character);
     }
 
     @Override
-    public void takeTurn(GameBoard board, char playerChar) {
-        String firstMove = Utils.getStringInput("Player " + playerChar + ", enter first character to move (e.g. a2 a3): ", false);
-        String secondMove = Utils.getStringInput("Player " + playerChar + ", enter the location for your character to move (e.g. a2 a3): ", false);
+    public void takeTurn(GameBoard board) {
+        boolean validMove = false;
 
+        while(!validMove) {
 
-        int fromRow = 8 - (firstMove.charAt(1) - '0');
-        int fromCol = firstMove.charAt(0) - 'a';
-        int toRow = 8 - (secondMove.charAt(1) - '0');
-        int toCol = secondMove.charAt(0) - 'a';
+            int fromRow = Utils.getIntInput("(" + getName() + ") From Row: ", Utils.TextColor.BLUE);
+            int fromCol = Utils.getIntInput("(" + getName() + ") From Col: ", Utils.TextColor.BLUE);
+            int toRow = Utils.getIntInput("(" + getName() + ") To Row: ", Utils.TextColor.CYAN);
+            int toCol = Utils.getIntInput("(" + getName() + ") To Col: ", Utils.TextColor.CYAN);
 
-        if (isValidMove(board.getBoard(), fromRow, fromCol, toRow, toCol, 'x')) {
-            board.getBoard()[toRow][toCol] = board.getBoard()[fromRow][fromCol];
-            board.getBoard()[fromRow][fromCol] = CheckerPiece.BLANK_SPACE;
-        } else {
-            System.out.println("Invalid move, try again");
-            takeTurn(board, playerChar);
+            if (isValidMove(board, fromRow, fromCol, toRow, toCol)) {
+                validMove = true;
+                board.getBoard()[toRow][toCol] = board.getBoard()[fromRow][fromCol];
+                board.getBoard()[fromRow][fromCol] = ' ';
+            } else {
+                Utils.writeLn("You made an invalid move!", Utils.TextColor.RED);
+                board.printBoard();
+            }
         }
+
     }
 
-    private static boolean isValidMove(Piece[][] board, int fromRow, int fromCol, int toRow, int toCol, char player) {
-        // Check if from and to positions are on the board
-        if (fromRow < 0 || fromRow > 7 || fromCol < 0 || fromCol > 7 || toRow < 0 || toRow > 7 || toCol < 0 || toCol > 7) {
+
+    private boolean isValidMove(GameBoard board, int fromRow, int fromCol, int toRow, int toCol) {
+        // Check if from position is occupied by current player's character
+        if (board.getBoard()[fromRow][fromCol] != getCharacter()) {
             return false;
         }
-        
-        // Check if the move is a diagonal move of the correct distance
-        if (Math.abs(fromRow - toRow) != 1 || Math.abs(fromCol - toCol) != 1) {
+
+        // Check if to position is within bounds of the board
+        if (toRow < 0 || toRow >= board.getRowSize() || toCol < 0 || toCol >= board.getColumnSize()) {
+            return false;
+        }
+
+        // Check if move is a valid diagonal move
+        if (Math.abs(fromRow - toRow) != Math.abs(fromCol - toCol)) {
             return false;
         }
 
         return true;
     }
-    @Override
-    public int getPiecesLeft() {
-        return 0;
-    }
 
-    @Override
-    public void setPiecesLeft(int piecesLeft) {
-
-    }
-
-    @Override
-    public void takePiece(int x, int y) {
-
-    }
-
-    @Override
-    public void kingPiece(int x, int y) {
-
-    }
 }

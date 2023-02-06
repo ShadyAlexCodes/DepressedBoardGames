@@ -14,6 +14,12 @@ import io.github.csc130.players.Player;
 public abstract class CheckersPlayer {
 
     private String name;
+    private char character;
+
+    public CheckersPlayer(String name, char character) {
+        this.name = name;
+        this.character = character;
+    }
 
     public String getName() {
         return name;
@@ -23,18 +29,13 @@ public abstract class CheckersPlayer {
         this.name = name;
     }
 
-    private int piecesLeft;
+    public char getCharacter() {
+        return character;
+    }
 
-    public abstract void takeTurn();
+    public void setCharacter(char character) {
+        this.character = character;
+    }
 
-    public abstract void takeTurn(GameBoard gameBoard, CheckerPiece playerChar);
-
-
-    public abstract int getPiecesLeft();
-
-    public abstract void setPiecesLeft(int piecesLeft);
-
-    public abstract void takePiece(int x, int y);
-
-    public abstract void kingPiece(int x, int y);
+    public abstract void takeTurn(GameBoard gameBoard);
 }

@@ -8,10 +8,12 @@ package io.github.csc130.checkers.game;
 
 import io.github.csc130.checkers.CheckerPiece;
 import io.github.csc130.checkers.Piece;
+import io.github.csc130.checkers.players.CheckersPlayer;
+import io.github.csc130.players.Player;
 import io.github.csc130.utils.Utils;
 
 public class GameBoard {
-    private final Piece[][] board;
+    private final char[][] board;
     private final int rowSize;
     private final int columnSize;
 
@@ -19,43 +21,60 @@ public class GameBoard {
         this.rowSize = row;
         this.columnSize = column;
 
-        board = new Piece[rowSize][columnSize];
+        board = new char[rowSize][columnSize];
 
 
     }
 
-    public Piece[][] getBoard() {
+    public char[][] getBoard() {
         return board;
     }
 
-    public void initializeBoard() {
-        for (int i = 0; i < 8; i++) {
-            for (int j = 0; j < 8; j++) {
+    public void initializeBoard(CheckersPlayer playerOne, CheckersPlayer playerTwo) {
+        // Create rows
+        for (int i = 0; i < rowSize; i++) {
+            // Create columns
+            for (int j = 0; j < columnSize; j++) {
                 if ((i + j) % 2 == 0) {
                     if (i < 3) {
-                        board[i][j] = CheckerPiece.RED_CHECKER;
+                        board[i][j] = playerOne.getCharacter();
                     } else if (i > 4) {
-                        board[i][j] = CheckerPiece.BLACK_CHECKER;
+                        board[i][j] = playerTwo.getCharacter();
                     } else {
-                        board[i][j] = CheckerPiece.BLANK_SPACE;
+                        board[i][j] = ' ';
                     }
                 } else {
-                    board[i][j] =CheckerPiece.BLANK_SPACE;
+                    board[i][j] = ' ';
                 }
             }
         }
     }
 
- /*   public void printBoard() {
+    public void printBoard() {
         System.out.println("  A B C D E F G H");
-        for (int i = 0; i < 8; i++) {
-            System.out.print((i + 1) + " ");
-            for (int j = 0; j < 8; j++) {
-                System.out.print(board[i][j] + " ");
-            }
-            System.out.println();
+        for (int i = 1; i < columnSize + 1; ++i) {
+            Utils.write("   " + i);
         }
-    }*/
+        Utils.writeLn("");
+
+        for (int i = 0; i < columnSize + 1; ++i)
+            Utils.write("+---");
+        Utils.writeLn("+");
+
+        for (int i = 0; i < rowSize; i++) {
+            Utils.write((i + 1) + " ");
+            for (int j = 0; j < columnSize; j++) {
+                Utils.write("| ");
+                Utils.write(String.valueOf(board[i][j]), Utils.TextColor.RED);
+                Utils.write(" ");
+            }
+            Utils.writeLn("| ");
+            for (int k = 0; k < columnSize + 1; k++)
+                Utils.write("+---");
+            Utils.writeLn("+");
+        }
+
+    }
 
 
     public int getRowSize() {
@@ -65,14 +84,14 @@ public class GameBoard {
     public int getColumnSize() {
         return columnSize;
     }
-
-    public void displayBoard() {
-        for (int row = 0; row < rowSize; row++) {
-            for(int col = 0; col < columnSize; col++) {
-                if(board[row][col].equals(CheckerPiece.BLANK_SPACE)) Utils.write(" | ");
-                if(col < columnSize - 1) Utils.write(" | ", Utils.TextColor.WHITE);
-            }
-            if(row < rowSize - 1) Utils.writeLn("---|---|---|---|", Utils.TextColor.YELLOW);
-        }
-    }
+//
+//    public void displayBoard() {
+//        for (int row = 0; row < rowSize; row++) {
+//            for(int col = 0; col < columnSize; col++) {
+//                if(board[row][col].equals(CheckerPiece.BLANK_SPACE)) Utils.write(" | ");
+//                if(col < columnSize - 1) Utils.write(" | ", Utils.TextColor.WHITE);
+//            }
+//            if(row < rowSize - 1) Utils.writeLn("---|---|---|---|", Utils.TextColor.YELLOW);
+//        }
+//    }
 }
