@@ -6,10 +6,7 @@
  */
 package io.github.csc130.checkers.game;
 
-import io.github.csc130.checkers.CheckerPiece;
-import io.github.csc130.checkers.Piece;
 import io.github.csc130.checkers.players.CheckersPlayer;
-import io.github.csc130.players.Player;
 import io.github.csc130.utils.Utils;
 
 public class GameBoard {
@@ -51,7 +48,6 @@ public class GameBoard {
     }
 
     public void printBoard() {
-        System.out.println("  A B C D E F G H");
         for (int i = 1; i < columnSize + 1; ++i) {
             Utils.write("   " + i);
         }
