@@ -1,5 +1,7 @@
 package io.github.csc130.slots;
 
+import io.github.csc130.utils.Utils;
+
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.Random;
@@ -19,6 +21,7 @@ public class Machine {
     }
 
     public void setPutIn(double putIn) {
+
         this.putIn = putIn;
     }
 
@@ -76,17 +79,29 @@ public class Machine {
     public double calculatePayout(){
         if(intValues[0]==intValues[1]&&intValues[0]==intValues[2]){
             totalPayOut = (intValues[0]+1)*10;
+        } else if (intValues[0]==intValues[1]||intValues[1]==intValues[2]) {
+            totalPayOut = (intValues[0]+1)*8;
+        } else if (intValues[0]==intValues[2]) {
+            totalPayOut = (intValues[0]+1)*5;
         }
         return totalPayOut;
     }
     public void printConsoleResults(){
-        System.out.println("-----------");
-        System.out.print("|");
+        Utils.writeLn("-----------");
+        Utils.write("|");
         for (String emoji: strEmojis) {
-            System.out.print(emoji);
-            System.out.print("|");
+            Utils.write(emoji);
+            Utils.write("|");
         }
-        System.out.println();
-        System.out.println("-----------");
+        Utils.writeLn("");
+        Utils.writeLn("-----------");
+    }
+
+    public void pull(){
+        setPutIn(Utils.getDoubleInput("Place the amount you are betting: ", Utils.TextColor.GREEN));
+        setStrEmojis();
+        printConsoleResults();
+        calculatePayout();
+        Utils.writeLn("You made $"+totalPayOut+".", Utils.TextColor.GREEN);
     }
 }
