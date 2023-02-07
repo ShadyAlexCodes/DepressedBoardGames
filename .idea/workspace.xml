@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e923e9bb-6f66-4855-94b7-cfbbc9fd4b76" name="Changes" comment="Hi cynthiaaaaaaa">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/sudoku/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/sudoku/Difficulty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/sudoku/SudokuRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/sudoku/SudokuRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/CheckerPiece.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/Piece.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/game/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/game/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersAI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersHuman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/players/CheckersHuman.java" afterDir="false" />
     </list>
     <list id="68d5d489-22b7-4eb8-82a6-d713cb383976" name="Changes by Cynthia" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,6 +91,7 @@
       <updated>1675357787746</updated>
       <workItem from="1675357789286" duration="5359000" />
       <workItem from="1675711021910" duration="3011000" />
+      <workItem from="1675797634606" duration="3230000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />

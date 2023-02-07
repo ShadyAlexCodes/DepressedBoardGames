@@ -48,6 +48,7 @@ public class GameBoard {
     }
 
     public void printBoard() {
+        Utils.write(" ");
         for (int i = 1; i < columnSize + 1; ++i) {
             Utils.write("   " + i);
         }
