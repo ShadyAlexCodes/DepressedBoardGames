@@ -7,4 +7,9 @@
 package io.github.csc130.slots;
 
 public class SlotsRunner {
+        public static void main(String[] args) {
+                Machine m = new Machine();
+                m.setStrEmojis();
+                m.printConsoleResults();
+        }
 }
