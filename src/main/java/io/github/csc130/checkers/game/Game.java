@@ -35,18 +35,18 @@ public class Game {
             int selection = displayMainMenu();
             switch(selection) {
                 case 1 -> {
-                    players.add(new CheckersHuman(Utils.getStringInput("Enter the first players name: ", false), Utils.getCharInput("Enter the first players character: ")));
-                    players.add(new CheckersHuman(Utils.getStringInput("Enter the second players name: ", false), Utils.getCharInput("Enter the second players character: ")));
+                    players.add(new CheckersHuman(Utils.getStringInput("Enter the first players name: ", false), 'r'));
+                    players.add(new CheckersHuman(Utils.getStringInput("Enter the second players name: ", false), 'b'));
                     playingGame = true;
                 }
                 case 2 -> {
-                    players.add(new CheckersHuman(Utils.getStringInput("Enter the first players name: ", false), Utils.getCharInput("Enter the first players character: ")));
-                    players.add(new CheckersAI(Utils.getStringInput("Enter the computers name: ", false), Utils.getCharInput("Enter the computers character: ")));
+                    players.add(new CheckersHuman(Utils.getStringInput("Enter the first players name: ", false), 'r'));
+                    players.add(new CheckersAI(Utils.getStringInput("Enter the computers name: ", false), 'b'));
                     playingGame = true;
                 }
                 case 3 -> {
-                    players.add(new CheckersAI(Utils.getStringInput("Enter the first computers name: ", false), Utils.getCharInput("Enter the first computers character: ")));
-                    players.add(new CheckersAI(Utils.getStringInput("Enter the second computers name: ", false), Utils.getCharInput("Enter the second computers character: ")));
+                    players.add(new CheckersAI(Utils.getStringInput("Enter the first computers name: ", false), 'r'));
+                    players.add(new CheckersAI(Utils.getStringInput("Enter the second computers name: ", false), 'b'));
                     playingGame = true;
                 }
                 default -> {
@@ -67,6 +67,7 @@ public class Game {
             gameBoard.printBoard();
 
             player.takeTurn(gameBoard);
+            kingPiece();
 
             // Check for game end
             if (gameEnd(player)) {
@@ -117,5 +118,16 @@ public class Game {
             }
         } while (selection == -1);
         return selection;
+    }
+
+    private void kingPiece() {
+        for (int i = 0; i < 7; i++) {
+            if (gameBoard.getBoard()[0][i] == 'b') {
+                gameBoard.getBoard()[0][i] = 'B';
+            }
+            if (gameBoard.getBoard()[7][i] == 'r') {
+                gameBoard.getBoard()[7][i] = 'R';
+            }
+        }
     }
 }
