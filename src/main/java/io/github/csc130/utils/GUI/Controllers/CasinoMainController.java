@@ -1,4 +1,4 @@
-package io.github.csc130.GUI.Controllers;
+package io.github.csc130.utils.GUI.Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;

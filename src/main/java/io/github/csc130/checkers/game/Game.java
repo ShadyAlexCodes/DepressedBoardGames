@@ -6,11 +6,10 @@
  */
 package io.github.csc130.checkers.game;
 
-import io.github.csc130.checkers.CheckerPiece;
 import io.github.csc130.checkers.players.CheckersAI;
 import io.github.csc130.checkers.players.CheckersHuman;
 import io.github.csc130.checkers.players.CheckersPlayer;
-import io.github.csc130.players.Player;
+import io.github.csc130.checkers.players.Player;
 import io.github.csc130.utils.Utils;
 
 import java.util.ArrayList;
