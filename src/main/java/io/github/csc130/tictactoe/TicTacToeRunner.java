@@ -69,11 +69,13 @@ public class TicTacToeRunner {
 
     public static void placePiece(char[][] gameBoard, int position, String user){
         char symbol = ' ';
+        //❌
         if(user.equals("Player")){
-            symbol = 'X';
+            symbol = '❌';
             playerPositions.add(position);
         } else if(user.equals("CPU")){
-            symbol = 'O';
+            //⭕
+            symbol = '⭕';
             cpuPositions.add(position);
         }
 
