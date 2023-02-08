@@ -8,7 +8,7 @@ package io.github.csc130.sudoku;
 
 import java.util.Random;
 
-public class SudokuRunner {
+public class Sudoku {
     private Random randy = new Random();
     private Board gameBoard;
     private Board solution;
@@ -87,7 +87,6 @@ public class SudokuRunner {
         for (int i = 0; i < solution.board.length; i++) {
             System.arraycopy(gameBoard.board[i], 0, solution.board[i], 0, solution.board.length);
         }
-        solve();
 
     }
 
