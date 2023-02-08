@@ -13,25 +13,17 @@ public class Main {
         do {
             int selection = displayMainMenu();
             switch (selection) {
-                case 0: {
-                  gameInMotion = true;
-                }
-                case 1: {
-                    new Checkers().startGame();
-                }
-                case 2: {
-                    new ConnectFourRunner().startGame();
-                }
-                case 3: {
-                    new SlotsRunner().startGame();
-                }
-                case 4: {
+                case 0 -> gameInMotion = true;
+                case 1 -> new Checkers().startGame();
+                case 2 -> new ConnectFourRunner().startGame();
+                case 3 -> new SlotsRunner().startGame();
+
+                case 4 -> {
                     // Sudoku
+                    break;
                 }
-                case 5: {
-                    new TicTacToeRunner().startGame();
-                }
-                default: {
+                case 5 -> new TicTacToeRunner().startGame();
+                default -> {
 
                 }
             }

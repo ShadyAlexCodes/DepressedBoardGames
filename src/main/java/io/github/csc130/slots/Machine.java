@@ -78,11 +78,11 @@ public class Machine {
     }
     public double calculatePayout(){
         if(intValues[0]==intValues[1]&&intValues[0]==intValues[2]){
-            totalPayOut = (intValues[0]+1)*10;
+            totalPayOut = (intValues[0]+1)*10*putIn;
         } else if (intValues[0]==intValues[1]||intValues[1]==intValues[2]) {
-            totalPayOut = (intValues[0]+1)*8;
+            totalPayOut = (intValues[0]+1)*8*putIn;
         } else if (intValues[0]==intValues[2]) {
-            totalPayOut = (intValues[0]+1)*5;
+            totalPayOut = (intValues[0]+1)*5*putIn;
         }
         return totalPayOut;
     }

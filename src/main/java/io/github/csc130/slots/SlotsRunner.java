@@ -6,9 +6,15 @@
  */
 package io.github.csc130.slots;
 
+import io.github.csc130.utils.Utils;
+
 public class SlotsRunner {
         public void startGame() {
                 Machine m = new Machine();
-                m.pull();
+                boolean play = true;
+                do {
+                        m.pull();
+                        play  = Utils.getBooleanInput("Play again? y/n","y","n", Utils.TextColor.BLUE);
+                }while (play);
         }
 }
