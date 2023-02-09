@@ -34,6 +34,9 @@ public class Game {
         do {
             int selection = displayMainMenu();
             switch(selection) {
+                case 0 -> {
+                    playingGame = true;
+                }
                 case 1 -> {
                     players.add(new CheckersHuman(Utils.getStringInput("Enter the first players name: ", false), 'r'));
                     players.add(new CheckersHuman(Utils.getStringInput("Enter the second players name: ", false), 'b'));

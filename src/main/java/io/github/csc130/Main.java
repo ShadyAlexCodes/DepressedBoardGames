@@ -2,6 +2,7 @@ package io.github.csc130;
 
 import io.github.csc130.checkers.Checkers;
 import io.github.csc130.connectfour.ConnectFourRunner;
+import io.github.csc130.connectfour.Player;
 import io.github.csc130.slots.SlotsRunner;
 import io.github.csc130.tictactoe.TicTacToeRunner;
 import io.github.csc130.utils.Utils;
@@ -9,6 +10,18 @@ import io.github.csc130.utils.Utils;
 public class Main {
     public static void main(String[] args) {
         boolean gameInMotion = false;
+
+        Person player = null;
+
+        while (player == null) {
+            if(Utils.getBooleanInput("Do you have a code? (Yes, No)", "yes", "no")) {
+                player = new Person(Utils.getStringInput("Please enter your name:", false), Utils.getIntInput("Please enter how much money you're spending"), true);
+            } else {
+                player = new Person(Utils.getStringInput("Please enter your name:", false), Utils.getIntInput("Please enter how much money you're spending"), false);
+            }
+        }
+
+        if(player.isFree()) Utils.writeLn("Congratulations! You're playing for free today!", Utils.TextColor.RED);
 
         do {
             int selection = displayMainMenu();
