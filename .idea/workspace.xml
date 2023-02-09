@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e923e9bb-6f66-4855-94b7-cfbbc9fd4b76" name="Changes" comment="Hi cynthiaaaaaaa">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/GUI/View/CheckerBoard.fxml" afterDir="false" />
     <list default="true" id="e923e9bb-6f66-4855-94b7-cfbbc9fd4b76" name="Changes" comment="Updating all classes to communicate with the main menu">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/sudoku/ChangeScene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/sudoku/SudokuBoard.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/sudoku/SudokuBoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/sudoku/SudokuMenu.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/sudoku/SudokuMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/sudoku/SudokuRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/sudoku/Sudoku.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/slots/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/slots/Machine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/slots/SlotsRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/slots/SlotsRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/tictactoe/TicTacToeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/tictactoe/TicTacToeRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/csc130/checkers/game/Game.java" afterDir="false" />
     </list>
     <list id="68d5d489-22b7-4eb8-82a6-d713cb383976" name="Changes by Cynthia" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,9 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="FxmlFile" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -55,7 +43,6 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/A Neumont/Year1/Q4/Sprint 1/Open Source Platforms Development/JavaFX&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -101,20 +88,8 @@
       <updated>1675357787746</updated>
       <workItem from="1675357789286" duration="5359000" />
       <workItem from="1675711021910" duration="3011000" />
-      <workItem from="1675799331624" duration="540000" />
-      <workItem from="1675801793961" duration="2271000" />
-      <workItem from="1675804078026" duration="863000" />
-      <workItem from="1675888444576" duration="6651000" />
-      <workItem from="1675797634606" duration="3230000" />
     </task>
-    <task id="LOCAL-00002" summary="sudoku">
-      <created>1675718083419</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1675718083419</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,7 +108,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Hi cynthiaaaaaaa" />
-    <MESSAGE value="sudoku" />
     <MESSAGE value="Updating all classes to communicate with the main menu" />
     <option name="LAST_COMMIT_MESSAGE" value="Updating all classes to communicate with the main menu" />
   </component>
