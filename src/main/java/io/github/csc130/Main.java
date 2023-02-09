@@ -3,6 +3,7 @@ package io.github.csc130;
 import io.github.csc130.checkers.Checkers;
 import io.github.csc130.connectfour.ConnectFourRunner;
 import io.github.csc130.slots.SlotsRunner;
+import io.github.csc130.sudoku.SudokuRunner;
 import io.github.csc130.tictactoe.TicTacToeRunner;
 import io.github.csc130.utils.Utils;
 
@@ -19,7 +20,7 @@ public class Main {
                 case 3 -> new SlotsRunner().startGame();
 
                 case 4 -> {
-                    // Sudoku
+
                     break;
                 }
                 case 5 -> new TicTacToeRunner().startGame();
