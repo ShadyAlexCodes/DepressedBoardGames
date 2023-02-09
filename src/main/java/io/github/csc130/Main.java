@@ -7,6 +7,7 @@ import io.github.csc130.slots.SlotsRunner;
 import io.github.csc130.sudoku.SudokuRunner;
 import io.github.csc130.tictactoe.TicTacToeRunner;
 import io.github.csc130.utils.Utils;
+import javafx.application.Application;
 
 public class Main {
     public static void main(String[] args) {
@@ -33,7 +34,7 @@ public class Main {
                 case 3 -> new SlotsRunner().startGame();
 
                 case 4 -> {
-
+                    Application.launch(SudokuRunner.class,args);
                     break;
                 }
                 case 5 -> new TicTacToeRunner().startGame();
