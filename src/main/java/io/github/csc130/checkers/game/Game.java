@@ -70,7 +70,7 @@ public class Game {
             kingPiece();
 
             // Check for game end
-            if (gameEnd(player)) {
+            if (gameEnd(turn == 0 ? players.get(1) : players.get(0))) {
                 System.out.println(player.getName() + " wins!");
 
                 playingGame = false;
@@ -85,14 +85,13 @@ public class Game {
 
             if(++turn == players.size()) turn = 0;
         } while(playingGame);
-
     }
 
-    private boolean gameEnd(CheckersPlayer currentPlayer) {
+    private boolean gameEnd(CheckersPlayer otherPlayer) {
         // Check if current player has no more pieces on the board
         for (int i = 0; i < gameBoard.getRowSize(); i++) {
             for (int j = 0; j < gameBoard.getColumnSize(); j++) {
-                if (gameBoard.getBoard()[i][j] == currentPlayer.getCharacter()) {
+                if (gameBoard.getBoard()[i][j] == otherPlayer.getCharacter()) {
                     return false;
                 }
             }
@@ -101,7 +100,7 @@ public class Game {
     }
 
     public static int displayMainMenu() {
-        int selection = -1;
+        int selection;
         do {
             Utils.writeLn("Select a option to play", Utils.TextColor.GREEN);
             Utils.writeLn("""
@@ -121,7 +120,7 @@ public class Game {
     }
 
     private void kingPiece() {
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < gameBoard.getRowSize(); i++) {
             if (gameBoard.getBoard()[0][i] == 'b') {
                 gameBoard.getBoard()[0][i] = 'B';
             }
